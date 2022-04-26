@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Todo } from './todo.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ToDoApp';
+   
+  name = 'Angular 4';
+
+  todos: Todo[] = [
+    new Todo('surendra','bankar'),
+    new Todo('Om','vanjari')
+  ];
 }
